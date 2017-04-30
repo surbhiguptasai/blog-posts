@@ -1,0 +1,17 @@
+{
+  "name": "blog-posts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+   "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.12.4",
+    "morgan": "^1.7.0",
+    "uuid": "^2.0.3"
+  },
+  "author": "\u001b[A\u001b[A\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[B\u001b[B\u001b[A\u001b[A\u001b[B\u001b[B\u001b[B",
+  "license": "ISC"
+}
