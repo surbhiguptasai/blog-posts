@@ -28,14 +28,14 @@ router.post('/', jsonParser, (req, res) => {
       return res.status(400).send(message);
     }
   }
-  const item = BlogPosts.create(req.body.title, req.body.title,req.body.author,req.body.publishDate);
+  const item = BlogPosts.create(req.body.title, req.body.content,req.body.author,req.body.publishDate);
   res.status(201).json(item);
 });
 
 // Delete BlogPosts (by id)!
 router.delete('/:id', (req, res) => {
   BlogPosts.delete(req.params.id);
-  console.log(`Deleted shopping list item \`${req.params.ID}\``);
+  console.log(`Deleted Blog posts item \`${req.params.ID}\``);
   res.status(204).end();
 });
 
@@ -69,7 +69,7 @@ router.put('/:id', jsonParser, (req, res) => {
     author:req.body.author,
     publishDate:req.body.publishDate
   });
-  res.status(204).json(updatedItem);
+  res.status(200).json(updatedItem);
 })
 
 module.exports = router;

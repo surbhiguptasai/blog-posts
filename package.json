@@ -4,13 +4,19 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "mocha ./test"
   },
    "dependencies": {
     "body-parser": "^1.15.2",
     "express": "^4.12.4",
     "morgan": "^1.7.0",
     "uuid": "^2.0.3"
+  },
+   "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "mocha": "^3.1.2"
   },
   "author": "\u001b[A\u001b[A\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[B\u001b[B\u001b[A\u001b[A\u001b[B\u001b[B\u001b[B",
   "license": "ISC"
