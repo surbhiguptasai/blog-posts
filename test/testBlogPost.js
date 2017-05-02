@@ -129,7 +129,7 @@ describe('Blog Post', function() {
   });
 
   // test strategy:
-  //  1. GET a shopping list items so we can get ID of one
+  //  1. GET a shopping   list items so we can get ID of one
   //  to delete.
   //  2. DELETE an item and ensure we get back a status 204
   it('should delete items on DELETE', function() {
